@@ -19,7 +19,7 @@ public class CalculatorController {
             int value2 = Integer.parseInt(num2);
             sum = value1 + value2;
         } catch (NumberFormatException ex) {
-            return new ResponseEntity<Object>("ERROR MESSAGE",HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<Object>("ERROR MESSAGE", HttpStatus.BAD_REQUEST);
         }
 
         return new ResponseEntity<Object>(sum, HttpStatus.OK);
